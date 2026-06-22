@@ -16,10 +16,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Electro Games — Sua Loja Gamer",
+  title: "Electro Games — Sua Loja Gamer em Curitiba",
   description:
-    "Games, consoles e acessórios com os melhores preços. Role para entrar na arena.",
-  metadataBase: new URL("http://localhost:3000"),
+    "Electro Games em Curitiba: consoles, games e acessórios novos e seminovos. PlayStation, Xbox, Nintendo e mais. Venha nos visitar ou fale pelo WhatsApp.",
+  metadataBase: new URL("https://www.electrogames.com.br"),
+  alternates: {
+    canonical: "https://www.electrogames.com.br",
+  },
+  openGraph: {
+    title: "Electro Games — Sua Loja Gamer em Curitiba",
+    description:
+      "Consoles, games e acessórios novos e seminovos. PlayStation, Xbox, Nintendo e mais.",
+    url: "https://www.electrogames.com.br",
+    siteName: "Electro Games",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default async function RootLayout({
