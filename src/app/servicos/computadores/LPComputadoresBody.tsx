@@ -90,7 +90,7 @@ export function LPComputadoresBody() {
         description="Upgrades, formatação, limpeza e reparos em PCs gamer, notebooks e workstations. Diagnóstico gratuito, peças de qualidade."
         whatsappMessage={WA_MSG}
         decorativeBg="PC"
-        glowSide="right"
+        glowSide="left"
         heroImage="/bg/bg-pc-1.jpg"
         stats={[]}
       />
