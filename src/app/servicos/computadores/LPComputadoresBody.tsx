@@ -92,11 +92,7 @@ export function LPComputadoresBody() {
         decorativeBg="PC"
         glowSide="right"
         heroImage="/bg/bg-pc-1.jpg"
-        stats={[
-          { value: "90", label: "dias", sub: "Garantia" },
-          { value: "24h", label: "prazo", sub: "Maioria dos serviços" },
-          { value: "Grátis", label: "Diagnóstico", sub: "Sem compromisso", wide: true },
-        ]}
+        stats={[]}
       />
 
       {/* ── SERVICES ─────────────────────────────────────────── */}
