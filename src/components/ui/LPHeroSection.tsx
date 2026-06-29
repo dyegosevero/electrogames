@@ -85,7 +85,7 @@ export function LPHeroSection({
             className={
               heroImageFit === "cover"
                 ? "absolute inset-0 h-full w-full object-cover object-center"
-                : "absolute bottom-0 right-0 h-[90%] w-auto object-contain object-bottom"
+                : "absolute bottom-0 right-[-10%] w-[120%] h-auto object-contain object-bottom md:right-0 md:w-auto md:h-[90%]"
             }
           />
         </motion.div>
