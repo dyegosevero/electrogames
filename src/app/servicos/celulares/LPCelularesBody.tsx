@@ -90,6 +90,7 @@ export function LPCelularesBody() {
         whatsappMessage={WA_MSG}
         decorativeBg="CEL"
         glowSide="left"
+        heroImage="/bg/bg-cel.jpg"
         stats={[
           { value: "90", label: "dias", sub: "Garantia" },
           { value: "24h", label: "prazo", sub: "Maioria dos reparos" },

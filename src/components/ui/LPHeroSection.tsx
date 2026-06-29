@@ -23,6 +23,7 @@ export type LPHeroSectionProps = {
   stats: LPStat[];
   decorativeBg: string;
   glowSide?: "left" | "right";
+  heroImage?: string; // caminho da imagem de fundo (ex: /bg/bg-cel.jpg)
 };
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -47,6 +48,7 @@ export function LPHeroSection({
   stats,
   decorativeBg,
   glowSide = "left",
+  heroImage,
 }: LPHeroSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const isMobile = useMobile();
@@ -67,6 +69,24 @@ export function LPHeroSection({
       ref={sectionRef}
       className="relative flex min-h-[88vh] items-center overflow-hidden bg-background px-6 pb-20 pt-32 md:px-10 md:pt-36"
     >
+      {/* Hero image background */}
+      {heroImage && (
+        <motion.div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-0"
+          style={{ y: bgY }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={heroImage}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-zinc-950/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/50 to-transparent" />
+        </motion.div>
+      )}
+
       {/* Glow — parallax no desktop */}
       <motion.div
         aria-hidden
