@@ -69,7 +69,7 @@ export function LPHeroSection({
   return (
     <section
       ref={sectionRef}
-      className="relative flex min-h-[88vh] items-center overflow-hidden bg-background px-6 pb-20 pt-32 md:px-10 md:pt-36"
+      className="relative flex min-h-screen items-center overflow-hidden bg-background px-6 pb-0 pt-32 md:px-10 md:pt-36 md:pb-20"
     >
       {/* Hero image background */}
       {heroImage && (
