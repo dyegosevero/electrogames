@@ -87,7 +87,7 @@ export function LPControlesBody() {
         line2="Reinventado."
         description="Hall Effect, paddles, personalização e conserto. Cada detalhe cuidado para que o seu jogo funcione no mais alto nível."
         whatsappMessage={WA_MSG}
-        decorativeBg="CTR"
+        decorativeBg=""
         glowSide="left"
         heroImage="/bg/bg-controles.jpg"
         stats={[]}

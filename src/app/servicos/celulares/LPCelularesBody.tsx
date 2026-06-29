@@ -88,7 +88,7 @@ export function LPCelularesBody() {
         line2="recuperado."
         description="Tela quebrada, bateria viciada ou botão com falha. Diagnóstico gratuito e reparo rápido com peças de qualidade."
         whatsappMessage={WA_MSG}
-        decorativeBg="CEL"
+        decorativeBg=""
         glowSide="left"
         heroImage="/bg/bg-cel.jpg"
         stats={[]}
