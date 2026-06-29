@@ -82,8 +82,8 @@ export function LPHeroSection({
             alt=""
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-zinc-950/70" />
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/50 to-transparent" />
+          <div className="absolute inset-0 bg-zinc-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/85 via-zinc-950/40 to-transparent" />
         </motion.div>
       )}
 

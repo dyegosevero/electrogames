@@ -91,11 +91,7 @@ export function LPCelularesBody() {
         decorativeBg="CEL"
         glowSide="left"
         heroImage="/bg/bg-cel.jpg"
-        stats={[
-          { value: "90", label: "dias", sub: "Garantia" },
-          { value: "24h", label: "prazo", sub: "Maioria dos reparos" },
-          { value: "Grátis", label: "Diagnóstico", sub: "Sem compromisso", wide: true },
-        ]}
+        stats={[]}
       />
 
       {/* ── SERVICES ─────────────────────────────────────────── */}
