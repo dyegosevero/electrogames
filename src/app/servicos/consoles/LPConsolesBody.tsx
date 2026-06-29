@@ -91,6 +91,7 @@ export function LPConsolesBody() {
         decorativeBg="CNS"
         glowSide="right"
         heroImage="/bg/bg-consoles.jpg"
+        heroImageFit="cover"
         stats={[]}
       />
 

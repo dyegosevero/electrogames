@@ -23,7 +23,8 @@ export type LPHeroSectionProps = {
   stats: LPStat[];
   decorativeBg: string;
   glowSide?: "left" | "right";
-  heroImage?: string; // caminho da imagem de fundo (ex: /bg/bg-cel.jpg)
+  heroImage?: string;
+  heroImageFit?: "contain" | "cover"; // contain = flutua no canto; cover = preenche toda a seção
 };
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -49,6 +50,7 @@ export function LPHeroSection({
   decorativeBg,
   glowSide = "left",
   heroImage,
+  heroImageFit = "contain",
 }: LPHeroSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const isMobile = useMobile();
@@ -80,7 +82,11 @@ export function LPHeroSection({
           <img
             src={heroImage}
             alt=""
-            className="absolute bottom-0 right-0 h-[90%] w-auto object-contain object-bottom"
+            className={
+              heroImageFit === "cover"
+                ? "absolute inset-0 h-full w-full object-cover object-center"
+                : "absolute bottom-0 right-0 h-[90%] w-auto object-contain object-bottom"
+            }
           />
         </motion.div>
       )}
