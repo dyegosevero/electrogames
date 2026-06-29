@@ -88,8 +88,8 @@ export function LPConsolesBody() {
         line2="no máximo."
         description="Limpeza, pasta térmica, metal líquido e reparos gerais. PS5, PS4, Xbox e Switch atendidos com peças premium."
         whatsappMessage={WA_MSG}
-        decorativeBg="CNS"
-        glowSide="right"
+        decorativeBg=""
+        glowSide="left"
         heroImage="/bg/bg-console-1a.jpg"
         stats={[]}
       />
