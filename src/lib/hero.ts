@@ -1,4 +1,4 @@
-export const FRAME_COUNT = 204;
+export const FRAME_COUNT = 180;
 
 export const framePath = (n: number, mobile = false) => {
   const folder = mobile ? "frames-mobile" : "frames";
