@@ -90,6 +90,7 @@ export function LPConsolesBody() {
         whatsappMessage={WA_MSG}
         decorativeBg="CNS"
         glowSide="right"
+        heroImage="/bg/bg-consoles.jpg"
         stats={[
           { value: "90", label: "dias", sub: "Garantia" },
           { value: "6+", label: "consoles", sub: "Atendidos" },

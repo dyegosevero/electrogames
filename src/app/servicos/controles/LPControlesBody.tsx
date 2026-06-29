@@ -89,6 +89,7 @@ export function LPControlesBody() {
         whatsappMessage={WA_MSG}
         decorativeBg="CTR"
         glowSide="left"
+        heroImage="/bg/bg-controles.jpg"
         stats={[
           { value: "6", label: "meses", sub: "Hall Effect" },
           { value: "90", label: "dias", sub: "Demais serviços" },
