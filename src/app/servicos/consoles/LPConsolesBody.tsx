@@ -90,8 +90,7 @@ export function LPConsolesBody() {
         whatsappMessage={WA_MSG}
         decorativeBg="CNS"
         glowSide="right"
-        heroImage="/bg/bg-consoles.jpg"
-        heroImageFit="cover"
+        heroImage="/bg/bg-console-1a.jpg"
         stats={[]}
       />
 
