@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, ShoppingCart, Seal } from "@phosphor-icons/react/dist/ssr";
+import { ArrowUpRight, ShoppingCart } from "@phosphor-icons/react/dist/ssr";
 import { EyebrowBadge } from "@/components/ui/EyebrowBadge";
 import { AnimatedItem, AnimatedSection } from "@/components/ui/AnimatedSection";
 import { createClient } from "@/lib/supabase/server";
@@ -54,21 +54,8 @@ export async function ProductsGallery() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
-                  <span
-                    className={`absolute right-3 top-3 rounded-full border px-2.5 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.2em] backdrop-blur-md ${
-                      p.condition === "Novo"
-                        ? "border-accent/40 bg-accent/[0.15] text-accent"
-                        : "border-white/20 bg-black/40 text-zinc-300"
-                    }`}
-                  >
-                    {p.condition === "Novo" ? (
-                      <span className="flex items-center gap-1">
-                        <Seal size={9} weight="fill" />
-                        {p.condition}
-                      </span>
-                    ) : (
-                      p.condition
-                    )}
+                  <span className="absolute right-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.2em] text-zinc-300 backdrop-blur-md">
+                    {p.condition}
                   </span>
                 </div>
 
