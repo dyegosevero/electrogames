@@ -80,10 +80,8 @@ export function LPHeroSection({
           <img
             src={heroImage}
             alt=""
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute bottom-0 right-0 h-[90%] w-auto object-contain object-bottom"
           />
-          <div className="absolute inset-0 bg-zinc-950/50" />
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/85 via-zinc-950/40 to-transparent" />
         </motion.div>
       )}
 
